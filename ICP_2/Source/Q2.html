@@ -1,0 +1,248 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                border: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            #nav-bar {
+                height: 150px;
+                margin-top: 20px;
+                margin-right: 30px;
+                position: absolute;
+                right: 10px;
+            }
+            #nav-bar li {
+                display: inline-block;
+                padding: 5px;
+                vertical-align: middle;
+            }
+            #nav-bar a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #nav-bar a:hover {
+                opacity: 1;
+                text-decoration: underline;
+            }
+
+            .nav-bar-opacity {
+                opacity: 0.7;
+            }
+
+            #menu-icon {
+                background-image: url("https://ssl.gstatic.com/gb/images/i2_2ec824b0.png");
+                width: 30px;
+                height: 30px;
+                background-position: 0 0;
+                background-size: 528px 68px;
+            }
+
+            #menu-icon:hover {
+                opacity: 1;
+            }
+
+            #sign-in {
+                padding: 8px 11px;
+                background-color: #4285f4;
+                border-radius: 50%;
+            }
+
+            #sign-in-text {
+                color: white !important;
+                font-weight: bold;
+                text-decoration: none !important;
+            }
+
+            .main-content {
+                position: relative;
+                width: 750px;
+                height: 250px;
+                margin: 0 auto;
+                top: 25vh;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: wrap;
+            }
+
+            .main-content img {
+                width: 272px;
+                height: 92px;
+            }
+
+            .recent_tab {
+                margin: 5px;
+                border-color: gray;
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            .recents {
+                width: 850px;
+                margin: 20px;
+            }
+
+            #search-bar {
+                position: relative;
+                flex-basis: 100%;
+                height: 40px;
+                margin-top: 20px;
+                border-radius: 1px;
+                border: solid 1px #DDD;
+                box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+            }
+
+            #search-bar:hover {
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            input {
+                position: relative;
+                width: 700px;
+                height: 100%;
+                left: 10px;
+                font-size: 20px;
+            }
+
+            input:focus {
+                outline-style: none;
+            }
+
+            #speech-link img {
+                position: absolute;
+                display: block;
+                width: 32px;
+                height: auto;
+                z-index: 1;
+                bottom: 4px;
+                left: 388px;
+            }
+
+            .buttons {
+                width: 25vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .buttons button {
+                width: 160px;
+                height: 45px;
+                background-color: rgb(240, 240, 240);
+                margin: 20px 5px;
+                font-weight: bold;
+                font-size: 15px;
+                border-radius: 3px;
+            }
+            p {
+                opacity: 0.5;
+            }
+            .buttons button:hover p {
+                opacity: 1;
+            }
+            .buttons button:hover {
+                border: solid 1px #BBB;
+            }
+            footer {
+                position: absolute;
+                width: 100vw;
+                bottom: 0;
+            }
+            .bottom-nav {
+                display: flex;
+                height: 40px;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #EEE;
+                opacity: 0.5;
+                border-top: solid 1px #CCC;
+            }
+            footer li {
+                display: inline;
+                margin: 0 20px;
+                font-size: 14px;
+            }
+            footer a {
+                text-decoration: none;
+                color: black;
+            }
+            .ul-left {
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+            .ul-right {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+
+    <body>
+    <ul id="nav-bar">
+        <li><a href="#" class="nav-bar-opacity">Gmail</a></li>
+        <li><a href="#" class="nav-bar-opacity">Images</a></li>
+        <li><a href="#"><div id="menu-icon" class="nav-bar-opacity"></div></a></li>
+        <li><button id="sign-in"><a href="#" id="sign-in-text">A</a></button></li>
+    </ul>
+
+    <div class="main-content">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div id="search-bar">
+            <input type="text" name="search">
+            <a href="#" id="speech-link"><img src="https://lh5.googleusercontent.com/OorCLDb2xlVQ4P2MDNCiwAnpv0K1ZrcDwEwRS3sOfDMrnYTnVPvCh7WtFQMbZ_S9u_jzcSLd8g=s128-h128-e365" alt="Speech icon"></a>
+        </div>
+        <div class="buttons">
+            <button name="Google-Search"><p>Google Search</p></button>
+            <button name="Feeling-Lucky"><p>I'm Feeling Lucky</p></button>
+        </div>
+
+        <!-- Create Recent Tabs -->
+
+        <div class="recents">
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/first.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/second.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/third.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/forth.png" style="height: 120px; width:160px"></a>
+        </div>
+        <div class="recents">
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/first.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/second.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/third.png" style="height: 120px; width:160px"></a>
+            <a href="images/first.png" target="_blank" class="recent_tab"><img src="images/forth.png" style="height: 120px; width:160px"></a>
+        </div>
+    </div>
+    </body>
+    <footer>
+        <div class="bottom-nav">
+            <ul class="ul-left">
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="ul-right">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+
+            </ul>
+        </div>
+    </footer>
+    </html>
