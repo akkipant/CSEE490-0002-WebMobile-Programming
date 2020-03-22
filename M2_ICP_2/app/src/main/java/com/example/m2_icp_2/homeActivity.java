@@ -33,10 +33,12 @@ public class homeActivity extends AppCompatActivity {
         button.setOnClickListener(signOutOnClickListener);
     }
 
-
+    //Logout
     private void signOutClicked() {
         logout = new Intent(homeActivity.this, MainActivity.class);
         //startActivity(logout);
+
+        //Finish the started activity
         finish();
     }
 }

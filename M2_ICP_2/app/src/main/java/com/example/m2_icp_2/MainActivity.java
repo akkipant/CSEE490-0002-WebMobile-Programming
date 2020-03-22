@@ -34,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.signIn);
 
+        //Button Listener
         button.setOnClickListener(signInOnClickListener);
 
     }
 
-
+    //Validate and Login
     private void signInClicked() {
 
         user = (EditText) findViewById(R.id.username);
@@ -47,16 +48,20 @@ public class MainActivity extends AppCompatActivity {
         login = new Intent(MainActivity.this, homeActivity.class);
         String username = user.getText().toString();
         String password = pass.getText().toString();
+
+        //Validation of Data entered
         if(!username.isEmpty() && !password.isEmpty()) {
             if(username.equals("User") && password.equals("Password")) {
                 Valflag = true;
             }
         }
 
+        //Start the Home Activity
         if(Valflag) {
             startActivity(login);
         }
 
+        //Give a Toast notification
         if(!Valflag) {
             Toast.makeText(getApplicationContext(),"Details did not match",Toast.LENGTH_SHORT).show();
         }
