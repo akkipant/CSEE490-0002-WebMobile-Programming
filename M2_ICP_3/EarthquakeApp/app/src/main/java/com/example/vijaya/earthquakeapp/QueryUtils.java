@@ -83,7 +83,7 @@ public class QueryUtils {
                 JSONObject json = jsonArray.getJSONObject(i).getJSONObject("properties");
                 System.out.println(json);
                 // Passing Data to Constructor
-                Earthquake earthquake = new Earthquake((double)json.get("mag"),
+                Earthquake earthquake = new Earthquake((double)(json.getDouble("mag")),
                         (String) json.get("place"), (long)json.get("time"), (String) json.get("url"));
                 // Adding each 'EarthQuake' Object to List created.
                 earthquakes.add(earthquake);
