@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "342178077742",
+    "firebase_url": "https://firebasm2icp5.firebaseio.com",
+    "project_id": "firebasm2icp5",
+    "storage_bucket": "firebasm2icp5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342178077742:android:d7355685c6f30b7c6d53bf",
+        "android_client_info": {
+          "package_name": "com.M2_ICP_5.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342178077742-bo3rud08ri1auafdf9sgo998mii718o1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjvno8ZTMFE3w9W46ypFyneuHkPEBNKGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342178077742-bo3rud08ri1auafdf9sgo998mii718o1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
